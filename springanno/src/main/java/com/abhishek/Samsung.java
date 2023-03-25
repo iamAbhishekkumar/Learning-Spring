@@ -1,9 +1,10 @@
 package com.abhishek;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component // Non qualified and decapatilized -> bean name would be samsung
 public class Samsung {
 
     @Autowired

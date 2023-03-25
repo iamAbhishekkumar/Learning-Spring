@@ -1,13 +1,16 @@
 package com.abhishek;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Tyre {
     private String brand;
 
     // constructor-arg in xml will use this constructor to initialize this ->
     // constructor injection
-    public Tyre(String brand) {
-        this.brand = brand;
-    }
+    // public Tyre(String brand) {
+    // this.brand = brand;
+    // }
 
     public String getBrand() {
         return brand;
@@ -20,6 +23,6 @@ public class Tyre {
 
     @Override
     public String toString() {
-        return "Tyre : " + this.brand;
+        return "This is tyre";
     }
 }
